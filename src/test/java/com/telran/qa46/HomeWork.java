@@ -84,4 +84,27 @@ public class HomeWork {
 
         driver.findElement(By.cssSelector("[href^='/computers']"));
     }
+
+    @Test
+    public void findElementDyXpath(){
+        driver.findElement(By.xpath("//input[@id='small-searchterms']"));
+        driver.findElement(By.xpath("//form"));
+        driver.findElement(By.xpath("//div[@class='header-links-wrapper']"));
+        driver.findElement(By.xpath("//span[contains(.,'1')]"));
+        driver.findElement(By.xpath("//span[text()='Sign up for our newsletter:']"));
+        driver.findElement(By.xpath("//strong[.='Do you like nopCommerce?']"));
+        driver.findElement(By.xpath("//span[starts-with(@data-valmsg-for,'Ne')]"));
+        driver.findElement(By.xpath("//a[@class='ico-register']/.."));
+        driver.findElement(By.xpath("//form/parent::*"));
+        driver.findElement(By.xpath("//form/parent::div"));
+        driver.findElement(By.xpath("//form/.."));
+        driver.findElement(By.xpath("//form/ancestor::*"));
+        driver.findElement(By.xpath("//form/ancestor::div"));
+        driver.findElement(By.xpath("//form/ancestor::div[2]"));
+        driver.findElement(By.xpath("//strong/following-sibling::ul"));
+        driver.findElement(By.xpath("//strong/following-sibling::*"));
+
+
+
+    }
 }
